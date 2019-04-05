@@ -14,6 +14,10 @@ const app = express()
 
 app.use(bodyParser.json())
 
+app.get('/houses/list', controller.list)
+app.post('houses/list', controller.create)
+app.delete('houses/list/:id', controller.delete)
+
 
 app.listen( PORT, () => {
     console.log(`listening on port ${PORT}`)

@@ -1,33 +1,112 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Header {
+  width: 100%;
+  height: 75px;
+  background-color: #519872;
   color: white;
+  font-weight: 700;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.Header > img {
+  position: absolute;
+  left: 400px;
+  top: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header > h1 {
+  position: absolute;
+  left: 445px;
+  top: 23px;
 }
+.App {
+  padding-top: 75px;
+  background-color: #AFD4C0;
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.Dash {
+  width: 50vw;
+  background-color: #E5F4EC;
+}
+
+.dash_subheader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.dash_heading {
+  font-size: 40px;
+  color: #3b5249;
+  margin: 20px;
+}
+
+.dash_subheader_button {
+  margin: 20px;
+  background-color: #8AEA92;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dash_subheader_button:hover {
+  cursor: pointer;
+}
+
+.dash_prop_container {
+  border-top: solid 1px black;
+  margin: 0 20px 10px;
+}
+
+.dash_prop_heading {
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.House {
+  width: 100%;
+  height: 150px;
+  background-color: #DEDEDE;
+  margin: 20px 0;
+  position: relative;
+}
+
+.house_detail_box {
+  height: 100%;
+  width: 90%;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.house_delete_button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.house_delete_button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
