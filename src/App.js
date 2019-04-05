@@ -20,18 +20,7 @@ class App extends Component {
               <h2 class="dash_heading">Dashboard</h2>
               <button class="dash_subheader_button">Add new Property</button>
             </div>
-            <div class="dash_prop_container">
-              <h3 class="dash_prop_heading">Home Listings</h3>
-              <div class="House">
-                <div class="house_detail_box">
-                  <p></p>
-                  <p></p>
-                  <p></p>
-                  <p></p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
+            <div class="dash_prop_container"></div>
           {routes}
           </div>
           <Header />

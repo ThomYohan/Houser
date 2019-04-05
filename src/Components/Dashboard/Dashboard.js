@@ -13,7 +13,7 @@ class Dashboard extends Component {
     }
     componentDidMount() {
         axios
-            .get(`/houses/list`)
+            .get(`http:localhost:3000/houses/list`)
             .then(results => {
                 this.setState({
                     houses: results.data
@@ -26,7 +26,7 @@ class Dashboard extends Component {
 
     deleteHouse = id => {
         axios
-            .delete(`/houses/list/${id}`)
+            .delete(`http:localhost:3000/houses/list/${id}`)
             .then(res => {
                 this.setState({ house: res.data })
             })
