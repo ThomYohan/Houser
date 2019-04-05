@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import House from '../House/House'
+import { Link } from 'react-router-dom'
 
 class Dashboard extends Component {
     
@@ -10,6 +11,9 @@ class Dashboard extends Component {
                 <div>Dashboard</div>
                 <div>
                 <House />
+                <Link to='/wizard'>
+                    <button>Add New Property</button>
+                </Link>
                 </div>
             </div>
         )
